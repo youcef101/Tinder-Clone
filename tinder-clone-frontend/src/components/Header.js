@@ -1,0 +1,47 @@
+import React from 'react'
+import styled from 'styled-components'
+import PersonIcon from '@material-ui/icons/Person';
+import ForumIcon from '@material-ui/icons/Forum';
+function Header() {
+    return (
+        <Container>
+            <UserIc>
+                <PersonIcon />
+            </UserIc>
+            <TinderImg>
+                <img src="data:image/jpeg;base64,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" alt='' />
+            </TinderImg>
+            <ChatIc>
+                <ForumIcon />
+            </ChatIc>
+
+        </Container>
+    )
+}
+
+export default Header
+const Container = styled.div`
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 15px;
+height:55px;
+background-color:white;
+z-index:1;
+`
+const UserIc = styled.div`
+color:#262626;
+cursor:pointer;
+`
+const TinderImg = styled.div`
+img{
+    border-radius:50%;
+    width:45px;
+    height:45px;
+    cursor:pointer;
+}
+`
+const ChatIc = styled.div`
+color:#262626;
+cursor:pointer;
+`
