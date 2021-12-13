@@ -32,15 +32,34 @@ function SwipeBtn() {
 
 export default SwipeBtn
 const Container = styled.div`
-margin-top:60px;
-`
-const ActionContainer = styled.div`
+margin-top:100px;
+width:100vw;
 display:flex;
 align-items:center;
-margin-left:-25px;
+justify-content:center;
+`
+const ActionContainer = styled.div`
+width:50%;
+display:flex;
+align-items:center;
+justify-content:space-evenly;
+@media(max-width:1024px){
+   width:100%;
+}
+@media(max-width:710px){
+   width:60%;
+}
+@media(max-width:610px){
+   width:75%;
+}
+@media(max-width:500px){
+   width:85%;
+}
+@media(max-width:425px){
+   width:95%;
+}
 `
 const RefreshBtn = styled.div`
-margin-left:60px;
 cursor:pointer;
 background-color:#f2f2f2;
 border-radius:50%;

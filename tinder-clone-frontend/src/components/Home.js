@@ -64,16 +64,15 @@ display:flex;
 align-items:center;
 justify-content:space-around;
 flex-direction:column;
-//position:relative;
-//background:gray;
 overflow-x:hidden
+
 `
 const CardPerson = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
 position:relative;
-margin-top:120px;
+margin-top:160px;
 
 `
 
@@ -83,7 +82,6 @@ cursor:pointer;
 `
 const Content = styled.div`
 border-radius:20px;
-//overflow:hidden;
 display:flex;
 padding:10px 20px;
 align-items:flex-end;
@@ -91,10 +89,34 @@ background-image: ${props => `url("${props.bgImg}")`};
 background-position:center;
 background-repeat:no-repeat;
 background-size:cover;
-width:30vw;
+width:20vw;
 height:60vh;
 box-shadow:0px 18px 53px 0px rgba(0,0,0,0.3);
+@media(max-width:1150px){
+   width:25vw;
+}
 
+@media(max-width:1000px){
+   width:30vw;
+}
+@media(max-width:850px){
+   width:35vw;
+}
+@media(max-width:730px){
+   width:40vw;
+}
+@media(max-width:590px){
+   width:45vw;
+}
+@media(max-width:500px){
+   width:50vw;
+}
+@media(max-width:425px){
+   width:60vw;
+}
+@media(max-width:360px){
+   width:75vw;
+}
 `
 const UserName = styled.div`
 color:white;
